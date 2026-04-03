@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: kewei/kewei.github.io
   branch: master
+  base_url: https://kewei-github-io.netlify.app
+  auth_endpoint: /externalauth/github
 site_url: https://kewei.github.io
 display_url: https://kewei.github.io
 media_folder: "static/images" # Where images are stored in repo
