@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
   branch: main
+site_url: https://kewei.github.io
+display_url: https://kewei.github.io
 media_folder: "static/images" # Where images are stored in repo
 public_folder: "/images"      # Where Hugo looks for images
 collections:
