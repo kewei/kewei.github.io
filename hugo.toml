@@ -1,3 +1,4 @@
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+theme = "PaperMod"
