@@ -123,8 +123,8 @@ comments:
   giscus:
     repo: 'kewei/kewei.github.io' # <gh-username>/<repo>
     repo_id: 'MDEwOlJlcG9zaXRvcnk4NTUxNTY4Mg=='
-    category: 'General'
-    category_id: 'DIC_kwDOBRjdos4C6CW_'
+    category: 'Announcements'
+    category_id: 'DIC_kwDOBRjdos4C6CW-'
     mapping: 'pathname' # optional, default to 'pathname'
     strict: 0 # optional, default to '0'
     input_position: 'bottom'  # optional, default to 'bottom'
