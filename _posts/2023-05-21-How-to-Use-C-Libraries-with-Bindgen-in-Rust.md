@@ -59,12 +59,12 @@ This path to the library .so will be needed later when we want Rust to link it.
 
 In `wrapper.h`, we have this content, because in Ubuntu libusb.h is in `/usr/include/libusb-1.0/`:
 
-```c++
+```c
 #include <libusb-1.0/libusb.h>
 ```
 So next step is that we need to tell Rust how to use build script to generate bindings for this above header. We create a `build.rs` at the project root directory. As the [official](https://doc.rust-lang.org/cargo/reference/build-scripts.html) page says, build scripts communicate with Cargo by printing to stdout. Cargo will interpret each line that starts with `cargo:` as an instruction that will influence compilation of the package. In `build.rs`, we need a `main()` function, inside this function, we first add a path for Cargo to search the libusb-1.0, which is the path we talked before: `/usr/lib/x86_64-linux-gnu`:
 
-```c++
+```rust
 println!("cargo:rustc-link-search=/usr/lib/x86_64-linux-gnu");
 ```
 
