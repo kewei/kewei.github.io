@@ -11,7 +11,7 @@ math: true
 mermaid: true
 comments: true
 image:
-  path: /assets/img/2023-05-21/raw_pointer.png
+  path: /assets/img/2023-05-21/raw_pointer.jpg
   alt: Reference and Raw Pointer
 ---
 
