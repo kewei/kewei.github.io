@@ -31,7 +31,7 @@ sudo apt install llvm-dev libclang-dev clang
 
 Then, we create a Rust project, in `Cargo.toml`, we add bindgen to [build-dependencies]:
 
-```Rust
+```rust
 [build-dependencies]
 bindgen = "0.65.1" # This is the latest version now
 ```
@@ -59,18 +59,18 @@ This path to the library .so will be needed later when we want Rust to link it.
 
 In `wrapper.h`, we have this content, because in Ubuntu libusb.h is in `/usr/include/libusb-1.0/`:
 
-```C
+```c
 #include <libusb-1.0/libusb.h>
 ```
 So next step is that we need to tell Rust how to use build script to generate bindings for this above header. We create a `build.rs` at the project root directory. As the [official](https://doc.rust-lang.org/cargo/reference/build-scripts.html) page says, build scripts communicate with Cargo by printing to stdout. Cargo will interpret each line that starts with `cargo:` as an instruction that will influence compilation of the package. In `build.rs`, we need a `main()` function, inside this function, we first add a path for Cargo to search the libusb-1.0, which is the path we talked before: `/usr/lib/x86_64-linux-gnu`:
 
-```Rust
+```rust
 println!("cargo:rustc-link-search=/usr/lib/x86_64-linux-gnu");
 ```
 
 This line of code tells Cargo to also search in this folder for libraries, it acts like `-L` to the compiler. Then, we add another line of code for the library we want to link:
 
-```Rust
+```rust
 println!("cargo:rustc-link-lib=usb-1.0");
 ```
 
@@ -78,19 +78,19 @@ This code passes `-l` to the complier, and tells Cargo the library name. This wi
 
 Next code we want to add to the build script is
 
-```Rust
+```rust
 println!("cargo:rerun-if-changed=wrapper.h");
 ```
 
 This tells Cargo to monitor wrapper.h, when the files is modified, it rerun the build script. If this is a directory, it will scan the whole directory. If you don't want the build script to rerun, the following setting should be set:
 
-```Rust
+```rust
 println!("cargo:rerun-if-changed=build.rs")
 ```
 
 The next step is to create a Builder for bindgen and configure settings for the needed bindings:
 
-```Rust
+```rust
 let bindings = bindgen::Builder::default()
     .header("wrapper.h")
     .parse_callbacks(Box::new(bindgen::CargoCallbacks))
@@ -102,7 +102,7 @@ Here we configure `wrapper.h` as the header file that bindgen would generate bin
 
 The last step is to write the generated bindings to one file, and later the package can include this file to use the bindings:
 
-```Rust
+```rust
 let output_path = PathBuf::from(env::var("OUT_DIR").unwrap());
 bindings.write_to_file(output_path.join("bindings.rs"))
     .expect("Could not write bindings");
@@ -110,7 +110,7 @@ bindings.write_to_file(output_path.join("bindings.rs"))
 
 So in this cargo package, we can use this following code to include above generated bindings, and use the library that it links to.
 
-```Rust
+```rust
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 ```
 

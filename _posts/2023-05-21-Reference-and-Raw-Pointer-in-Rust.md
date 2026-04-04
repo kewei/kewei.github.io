@@ -20,7 +20,7 @@ image:
 
 Rust's ownership feature is one of the key points that give memory safety guarantee to Rust, without considering a garbage collector. When you assign one value, `str1` that has a pointer in stack pointing to value "I am a string" storing at heap, to another one, `str2`:
 
-```Rust
+```rust
 let str1 = String::from("I am a string");
 let str2 = str1;
 ```
@@ -39,7 +39,7 @@ The reason that Rust still has raw pointers (despite having smart pointers like 
 
 **Example: Reference vs Pointer**
 
-```Rust
+```rust
 let num = 10;
 let num_ptr: *const i32 = &num;
 println!("num_ptr: {:?}", unsafe{ *num_ptr });
@@ -61,7 +61,7 @@ We can dereference a reference `num_ref` safely, but dereferencing the raw point
 
 Another difference is that you can get the referred value by directly using the reference `num_ref`, but you only get the memory address if you use the pointer `num_ptr` without an explicit dereference:
 
-```Rust
+```rust
 let num = 10;
 let num_ptr: *const i32 = &num;
 println!("num_ptr: {:?}", num_ptr);
@@ -81,7 +81,7 @@ num_ref: 10
 
 One tricky fact is that you can modify a pointer through a mutable reference even if that pointer was initially null. However, attempting to dereference a null double-pointer directly will result in a segmentation fault.
 
-```Rust
+```rust
 let mut num = 15;
 let mut null_pointer: *mut *mut i32 = ptr::null_mut();
 let mut null_temp: *mut i32 = ptr::null_mut();

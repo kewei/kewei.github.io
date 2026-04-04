@@ -32,12 +32,12 @@ github:
 #  username: twitter_username # change to your Twitter username
 
 author:
-  nake: "Kewei Zhang"
+  name: "Kewei Zhang"
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Kewei Zhang
+  name: "Kewei Zhang"
   email: zkw20080810@gmail.com # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
