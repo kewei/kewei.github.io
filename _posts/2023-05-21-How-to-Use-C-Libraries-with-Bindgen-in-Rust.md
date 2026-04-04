@@ -11,8 +11,8 @@ math: true
 mermaid: true
 comments: true
 image:
-	path: /assets/img/2023-05-21/rust_c.png
-	alt: Rust and C Binding
+  path: /assets/img/2023-05-21/rust_c.png
+  alt: Rust and C Binding
 ---
 
 # How to Use C Libraries with Bindgen in Rust?
