@@ -11,8 +11,8 @@ math: true
 mermaid: true
 comments: true
 image:
-  path: /assets/img/2023-07-28/arc_mutex.png
-  alt: Arc and Mutex
+  path: /assets/img/2024-04-04/deref.png
+  alt: Deref Coersion
 ---
 
 # References and Deref Coercion(Auto-dereferencing)
