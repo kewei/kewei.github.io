@@ -11,7 +11,7 @@ math: true
 mermaid: true
 comments: true
 image:
-  path: /assets/img/2024-04-04/deref.png
+  path: /assets/img/2026-04-04/deref.png
   alt: Deref Coersion
 ---
 
