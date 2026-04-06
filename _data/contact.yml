@@ -10,6 +10,10 @@
   icon: 'fab fa-linkedin'
   url: 'https://www.linkedin.com/in/keweizhang'
 
+- type: website
+  image: '/assets/img/bp.png'
+  url: 'https://www.blogpivot.app'
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
