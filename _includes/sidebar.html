@@ -98,7 +98,8 @@
 	  {% if entry.image %}
 	    <img src="{{ entry.image | relative_url }}" 
               alt="{{ entry.type }}" 
-              style="width: 1.1rem; height: 1.1rem; vertical-align: middle; filter: grayscale(100%);">
+	      style="width: 1.1rem; height: 1.1rem; vertical-align: middle;">
+	      <!-- filter: grayscale(100%);"> -->
           {% else %}
             <i class="{{ entry.icon }}"></i>
           {% endif %}
