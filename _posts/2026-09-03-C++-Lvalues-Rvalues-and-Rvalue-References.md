@@ -3,7 +3,7 @@ title: " Lvalues, Rvalues, and Rvalue References in C++"
 description: Understand the distinction between lvalues, rvalues, lvalue references, and rvalue references.
 layout: post
 author: Kewei Zhang
-date: 2026-09-03 22:06:00 +0000
+date: 2026-09-03
 categories:
   - C++
   - rvalue
