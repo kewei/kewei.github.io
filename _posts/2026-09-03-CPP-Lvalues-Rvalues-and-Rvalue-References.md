@@ -13,9 +13,7 @@ pin: true
 math: true
 mermaid: true
 comments: true
-image: |-
-  path: /assets/img/2026-09-03/lvalue_rvalue.jpeg
-  alt: lvalue and rvalue
+image: '{"path": "/assets/img/2026-09-03/lvalue_rvalue.jpeg", "alt": "lvalue and rvalue"}'
 ---
 
 # C++ Lvalues, Rvalues, and Rvalue References
