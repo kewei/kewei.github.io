@@ -2,7 +2,7 @@
 title: How To Build Github Page With Obsidian + Jekyll + Giscus
 description: A powerful markdown editor Obsidian and a nice site generator Jekyll that Github supports natively, using Github discussions for comments via Giscus.
 layout: post
-author: Kewei Zhang
+author: kewei
 date: 2026-04-05 16:36:02 +0000
 categories:
   - Web

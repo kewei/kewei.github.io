@@ -2,7 +2,7 @@
 title: Lock Free Data Structure for High Speed Data Processing
 description: Mutex works well for protecting data access in multi-threading, however, it slows down the system when one thread locks the data, which is essential for high frequency data and it does not allow multiple access simutaneously, like digital signal processing or real-time radio data. This article provides one solution for this purpose with a lock-free data structure, with Atomic.
 layout: post
-author: Kewei Zhang
+author: kewei
 date: 2026-05-24 22:37:00 +0000
 categories:
   - Rust

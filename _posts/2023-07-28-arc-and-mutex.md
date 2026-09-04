@@ -2,7 +2,7 @@
 title: Arc and Mutex
 description: How to share data across threads using `Arc` and `Mutex`.
 layout: post
-author: "Kewei Zhang"
+author: kewei
 date: 2023-07-28 15:43:00 +0000
 categories: [Rust, thread]
 tags: [Rust, Arc, Mutex]

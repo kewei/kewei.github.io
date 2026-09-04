@@ -2,7 +2,7 @@
 title: How to Use C Libraries with Bindgen in Rust?
 description: Instructions on how to use Bindgen in Rust.
 layout: post
-author: "Kewei Zhang"
+author: kewei
 date: 2023-05-21 16:33:00 +0000
 categories: [Rust, Bindgen]
 tags: [Rust, Bindgen, C]
