@@ -6,11 +6,10 @@ author: kewei
 date: 2026-05-24 22:37:00 +0000
 categories:
   - Rust
-  - Threading
-  - Digital signal processing
-  - Mutex
+  - DSP
 tags:
   - Lock-free
+  - Threading
   - Atomic
   - Mutex
 pin: true

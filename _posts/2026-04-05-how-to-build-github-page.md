@@ -8,8 +8,7 @@ categories:
   - Web
   - Github
 tags:
-  - Web
-  - Github
+  - github.io
   - Obsidian
   - Jekyll
   - Giscus

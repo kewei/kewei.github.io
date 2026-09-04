@@ -4,8 +4,8 @@ description: Instructions on how to use Bindgen in Rust.
 layout: post
 author: kewei
 date: 2023-05-21 16:33:00 +0000
-categories: [Rust, Bindgen]
-tags: [Rust, Bindgen, C]
+categories: [Rust]
+tags: [Bindgen]
 pin: true
 math: true
 mermaid: true

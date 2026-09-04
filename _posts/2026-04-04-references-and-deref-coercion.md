@@ -4,8 +4,8 @@ description: When and where to use or not use * operator for deref.
 layout: post
 author: kewei
 date: 2026-04-04 23:36:00 +0000
-categories: [Rust, Reference]
-tags: [Rust, Reference, Deref]
+categories: [Rust]
+tags: [Reference, Deref]
 pin: true
 math: true
 mermaid: true

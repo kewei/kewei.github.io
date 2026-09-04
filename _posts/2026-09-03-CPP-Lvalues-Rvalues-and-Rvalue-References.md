@@ -9,6 +9,7 @@ categories:
 tags:
   - lvalue
   - rvalue
+  - rvalue-references
 pin: true
 math: true
 mermaid: true
