@@ -16,8 +16,6 @@ image:
   alt: Arc and Mutex
 ---
 
-# Arc and Mutex
-{: .mt-4 .mb-0 }
 
 ### The difference between Arc and Mutex
 

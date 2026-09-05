@@ -21,8 +21,7 @@ image:
   alt: Lock-free vs Mutex
 ---
 
-# Lock Free Data Structure for High Speed Data Processing
-{: .mt-4 .mb-0 }
+
 Mutex or RwLock is a good choice for sharing data across threads in safe Rust, where Mutex allows one writer or one reader at any time, and Rwlock allows a number of readers or one writer at any time. However, when you want to have one writer and a number of readers to access the data at same time, none of them would work. The cases are quite common in radio processing or audio processing, where you have one input that continues writing data, and you have some readers to use the data continuously, and neither of them should block others unless there is no enough data from input. For such kinds of applications, lock-free data structure is essential when the data is shared among the writing and reading threads.
 
 Here, `MulticastRingBuffer` is a ring buffer that has a fixed size and a head that records the position of latest written samples. `Arc<MulticastRingBuffer>` is used across threads, which gives you a shared reference to the ring buffer, so we need **Interior Mutability** in order to write samples to the `buffer`.  `UnsafeCell` makes it possible to mutate the buffer through a shared reference across threads via `Arc`, and the compiler will know that you are gonna mutate the buffer so that it would not make optimization by assuming this reference is immutable.

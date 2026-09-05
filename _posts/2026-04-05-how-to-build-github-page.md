@@ -20,8 +20,6 @@ image:
   alt: Obsidian and Jekyll
 ---
 
-# How To Build Github Page With Obsidian + Jekyll + Giscus
-{: .mt-4 .mb-0 }
 
 It is nice to have a free site to store your blogs, which is supposed to be free, simple and elegant. Github page happens to provide a free hosting plan for that. And it supports a nice web generator tool [Jekyll](https://jekyllrb.com/). Obsidian is an excellent choice as markdown tool, which also has nice integration with Github.
 

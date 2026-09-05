@@ -19,8 +19,6 @@ image:
   alt: lvalue and rvalue
 ---
 
-# C++ Lvalues, Rvalues, and Rvalue References
-{: .mt-4 .mb-0 }
 
 The main reason C++ has rvalue references is **performance**: they allow expensive resources to be transferred instead of copied when the original object is no longer needed, i.e., ownership transfer.
 

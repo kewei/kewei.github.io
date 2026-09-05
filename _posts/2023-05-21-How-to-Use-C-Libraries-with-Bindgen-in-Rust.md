@@ -17,9 +17,6 @@ image:
   alt: Rust and C Binding
 ---
 
-# How to Use C Libraries with Bindgen in Rust?
-{: .mt-4 .mb-0 }
-
 
 Although Rust is a decent language when considering security and speed (that's why I am learning it.), it is still a new language with not big community. There are many stable C libraries that we can use through bindings when there are no or unstable corresponding Rust libraries. In this blog, I will describe how to use [Bindgen](https://docs.rs/bindgen/latest/bindgen/) to link C libraries, the commands are for Ubuntu, should be working for Debain-based Linux. Bindgen is stable for C libraries, but not very stable for C++. [This](https://rust-lang.github.io/rust-bindgen/) is an official tutorial, but it is not really clear.
 

@@ -16,8 +16,6 @@ image:
   alt: Deref Coersion
 ---
 
-# References and Deref Coercion(Auto-dereferencing)
-{: .mt-4 .mb-0 }
 
 Deref coercion is a nice feature that allows you not have to write code like `***v` when you want to access data behind multiple layers of pointers. There are some data structures and some actions that trigger it.
 

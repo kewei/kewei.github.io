@@ -18,8 +18,6 @@ image:
   alt: Reference and Raw Pointer
 ---
 
-# Reference and Raw Pointer in Rust
-{: .mt-4 .mb-0 }
 
 Rust's ownership feature is one of the key points that give memory safety guarantee to Rust, without considering a garbage collector. When you assign one value, `str1` that has a pointer in stack pointing to value "I am a string" storing at heap, to another one, `str2`:
 

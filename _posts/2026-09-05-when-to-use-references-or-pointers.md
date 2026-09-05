@@ -18,8 +18,6 @@ image:
   alt: Reference and Pointer
 ---
 
-# Use References Instead of Pointers in C++
-{: .mt-4 .mb-0 }
 
 When working with objects in C++, you often have a choice between passing an object using a **pointer** or using a **reference**.
 
