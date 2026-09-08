@@ -6,7 +6,6 @@ author: kewei
 date: 2026-09-08 21:23:00 +0200
 categories:
   - GNSS
-  - Rust
 tags:
   - Acquisition
   - C/A

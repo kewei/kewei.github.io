@@ -6,8 +6,8 @@ author: kewei
 date: 2026-05-24 22:37:00 +0000
 categories:
   - Rust
-  - DSP
 tags:
+  - DSP
   - Lock-free
   - Threading
   - Atomic
