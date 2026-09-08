@@ -6,8 +6,8 @@ author: kewei
 date: 2026-04-05 16:36:02 +0000
 categories:
   - Web
-  - Github
 tags:
+  - Github
   - Obsidian
   - Jekyll
   - Giscus
