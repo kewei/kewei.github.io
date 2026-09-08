@@ -3,7 +3,7 @@ title: Debugging GNSS Code-Phase Drift in Acquisition
 description: When sampling frequency is not integer multiples of CA code frequency, non-coherent acquisition over long signal needs to take consideration of it. This article explains why that matters, how a fractional sample error accumulates, and how to distinguish this problem from other possible causes of code-phase drift.
 layout: post
 author: kewei
-date: 2026-09-08 21:23:00 +0000
+date: 2026-09-08 21:23:00 +0200
 categories:
   - GNSS
   - Rust
